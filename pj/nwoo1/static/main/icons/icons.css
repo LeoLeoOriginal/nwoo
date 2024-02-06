@@ -1,0 +1,69 @@
+.icon{
+    display: inline-block;
+    background-color: #0ff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1em;
+    width: 1em;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size:contain;
+}
+.white_body .icon{
+    background-color: var(--bgcolor);
+}
+.facebook{
+    -webkit-mask-image: url(facebook-tag.svg);
+    mask-image: url(facebook-tag.svg);
+}
+.instagram{
+    -webkit-mask-image: url(instagram.svg);
+    mask-image: url(instagram.svg);
+}
+.twitter{
+    -webkit-mask-image: url(twitter.svg);
+    mask-image: url(twitter.svg);
+}
+.x_com{
+    -webkit-mask-image: url(x.svg);
+    mask-image: url(x.svg);
+}
+.youtube{
+    -webkit-mask-image: url(youtube.svg);
+    mask-image: url(youtube.svg);
+}
+.badge_check{
+    -webkit-mask-image: url(badge-check.svg);
+    mask-image: url(badge-check.svg);
+}
+.discord{
+    -webkit-mask-image: url(discord.svg);
+    mask-image: url(discord.svg);
+}
+
+.sun{
+    -webkit-mask-image: url(sun-light.svg);
+    mask-image: url(sun-light.svg);
+}
+
+.moon{
+    -webkit-mask-image: url(half-moon.svg);
+    mask-image: url(half-moon.svg);
+}
+.transLeft{
+    -webkit-mask-image: url(transition-left.svg);
+    mask-image: url(transition-left.svg);
+}
+.transRight{
+    -webkit-mask-image: url(transition-right.svg);
+    mask-image: url(transition-right.svg);
+}
+.menu{
+    -webkit-mask-image: url(menu.svg);
+    mask-image: url(menu.svg);
+}
+.exit{
+    -webkit-mask-image: url(xmark.svg);
+    mask-image: url(xmark.svg);
+}

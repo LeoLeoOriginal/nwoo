@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/main_base.css' %}">
+    <link rel="stylesheet" href="{% static 'main/icons/icons.css' %}">
+    <title>{% block title %}N - w00{% endblock %}</title>
+</head>
+<body class="" id="body">
+
+    <nav class="side_menu out">
+        <button class="open-close-menu" onclick="open_close_menu()"><span class="icon menu"></span></button>
+
+        <h1>Light mode</h1>
+
+        <button class="light" onclick="change_lightning()">
+            <div class="sun_side">
+                <span class="icon sun"></span>
+            </div>
+            <div class="moon_side">
+                <span class="icon moon"></span>
+            </div>
+        </button>
+    </nav>
+
+    <nav class="header">
+        <img src="{% static 'main/img/nwooBGTransparent.png' %}" alt="">
+        <div class="tab">
+            <a href="">Home</a>
+        </div>
+        <div class="tab">
+            <a href="">Projects</a>
+        </div>
+        <div class="tab">
+            <a href="">About Us</a>
+        </div>
+        <div class="esterTab" style="font-family: var(--secret_font);">
+            <a href="">What are you looking for?</a>
+        </div>
+    </nav>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    <footer class="footer">
+        <div class="footer_column">
+            <p>Social Media</p>
+            <ul>
+                <li><span class="icon facebook"></span> Facebook</li>
+                <li><span class="icon twitter"></span><span class="icon x_com"></span>Twitter | X</li>
+                <li><span class="icon discord"></span>Discord</li>
+                <li><span class="icon instagram"></span> Instagram</li>
+            </ul>
+        </div>
+        <div class="footer_column"></div>
+        <div class="footer_column"></div>
+        <div class="footer_column"></div>
+    </footer>
+    <script src="{% static 'main/light_source_button.js' %}"></script>
+    <script src="{% static 'main/side_menu.js' %}"></script>
+</body>
+</html>
